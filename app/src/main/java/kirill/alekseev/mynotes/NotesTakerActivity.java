@@ -1,5 +1,6 @@
 package kirill.alekseev.mynotes;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
@@ -39,6 +40,7 @@ public class NotesTakerActivity extends AppCompatActivity {
                     return;
 
                 }
+                @SuppressLint("SimpleDateFormat")
                 SimpleDateFormat formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss");
                 Date date = new Date();
 
