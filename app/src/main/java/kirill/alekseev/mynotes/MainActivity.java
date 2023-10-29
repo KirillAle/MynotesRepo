@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(requestCode == 101) {
             if (resultCode == Activity.RESULT_OK) {
-                Notes new_notes = (Notes) data.getSerializableExtra("notes");
+                Notes new_notes = (Notes) data.getSerializableExtra("note");
                 dataBase.mainDao().insert(new_notes);
 
                 notes.clear();

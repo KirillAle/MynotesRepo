@@ -50,7 +50,7 @@ public class NotesTakerActivity extends AppCompatActivity {
                 notes.setDate(formatter.format(date));
 
                 Intent intent = new Intent();
-                intent.putExtra("notes", notes);
+                intent.putExtra("note", notes);
                 setResult(Activity.RESULT_OK, intent);
                 finish();
 
